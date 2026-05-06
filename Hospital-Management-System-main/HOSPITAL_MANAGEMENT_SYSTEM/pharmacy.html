@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy - MediCare Plus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo"></div>
+                <div>
+                    <h1 class="hero">MediCare Plus</h1>
+                    <p class="tagline">Your Health, Our Priority</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a></li>
+                    <li><a href="doc.html">
+                        <span class="nav-icon">👨‍⚕️</span>
+                        <span class="nav-text">Doctors</span>
+                    </a></li>
+                    <li><a href="bapp.html">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Book Appointment</span>
+                    </a></li>
+                    <li><a href="pd.html">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </a></li>
+                    <li><a href="pharmacy.html" class="active">
+                        <span class="nav-icon">💊</span>
+                        <span class="nav-text">Pharmacy</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="pharmacy fade-in">
+                <div class="pharmacy-header">
+                    <h2 class="text-center mb-lg">MediCare Pharmacy</h2>
+                    <p class="text-center mb-xl" style="color: var(--light-text); font-size: 1.1rem;">Get your prescribed medications and health products delivered to your doorstep with our trusted pharmacy service.</p>
+                </div>
+                
+                <div class="pharmacy-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h4>Free Delivery</h4>
+                        <p>Free delivery on orders above ₹500</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💊</div>
+                        <h4>Authentic Medicines</h4>
+                        <p>100% genuine and FDA approved medications</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Quick Delivery</h4>
+                        <p>Same-day delivery available in select areas</p>
+                    </div>
+                </div>
+
+                <div class="products-section">
+                    <h3 class="mb-md">Available Products</h3>
+                    <div class="products" id="pharmacy-products"></div>
+                </div>
+                
+                <div class="cart">
+                    <div class="cart-header">
+                        <h3>Your Cart</h3>
+                        <span class="cart-count" id="cart-count">0 items</span>
+                    </div>
+                    <ul id="cart-items" class="cart-items"></ul>
+                    <div class="cart-summary">
+                        <div class="cart-total">
+                            <span>Total: ₹<span id="cart-total">0.00</span></span>
+                        </div>
+                        <button id="checkout-btn" class="checkout-btn">
+                            <span>Proceed to Checkout</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MediCare Plus</h3>
+                <p>Your trusted healthcare partner, providing comprehensive medical services with compassion and excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="doc.html">Our Doctors</a></p>
+                <p><a href="bapp.html">Book Appointment</a></p>
+                <p><a href="pharmacy.html">Pharmacy</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 (555) 123-4567</p>
+                <p>📧 info@medicareplus.com</p>
+                <p>📍 123 Health Street, Medical City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MediCare Plus | All Rights Reserved | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

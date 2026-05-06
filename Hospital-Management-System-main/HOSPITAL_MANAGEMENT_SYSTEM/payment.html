@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - MediCare Plus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo"></div>
+                <div>
+                    <h1 class="hero">MediCare Plus</h1>
+                    <p class="tagline">Your Health, Our Priority</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a></li>
+                    <li><a href="doc.html">
+                        <span class="nav-icon">👨‍⚕️</span>
+                        <span class="nav-text">Doctors</span>
+                    </a></li>
+                    <li><a href="bapp.html">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Book Appointment</span>
+                    </a></li>
+                    <li><a href="pd.html">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </a></li>
+                    <li><a href="pharmacy.html">
+                        <span class="nav-icon">💊</span>
+                        <span class="nav-text">Pharmacy</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="pay" class="fade-in">
+                <div class="payment-header">
+                    <h2 class="text-center mb-lg">Secure Payment</h2>
+                    <p class="text-center mb-xl" style="color: var(--light-text); font-size: 1.1rem;">Complete your payment securely using our encrypted payment gateway.</p>
+                </div>
+                
+                <div class="pay-card">
+                    <div class="payment-summary">
+                        <h3>Payment Summary</h3>
+                        <div class="summary" id="payment-summary">Loading appointment...</div>
+                    </div>
+                    
+                    <form id="payment-form" class="payment-form">
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input id="card-name" type="text" placeholder="Full name as on card" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input id="card-number" type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="card-exp">Expiry Date</label>
+                                <input id="card-exp" type="text" inputmode="numeric" maxlength="5" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-cvv">CVV</label>
+                                <input id="card-cvv" type="password" inputmode="numeric" maxlength="4" placeholder="123" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="billing-address">Billing Address</label>
+                            <textarea id="billing-address" placeholder="Enter your billing address" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <h4>Payment Methods</h4>
+                            <div class="method-options">
+                                <label class="method-option">
+                                    <input type="radio" name="payment-method" value="card" checked>
+                                    <span class="method-icon">💳</span>
+                                    <span>Credit/Debit Card</span>
+                                </label>
+                                <label class="method-option">
+                                    <input type="radio" name="payment-method" value="upi">
+                                    <span class="method-icon">📱</span>
+                                    <span>UPI</span>
+                                </label>
+                                <label class="method-option">
+                                    <input type="radio" name="payment-method" value="netbanking">
+                                    <span class="method-icon">🏦</span>
+                                    <span>Net Banking</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="pay-now-btn">
+                            <span>Pay Now</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MediCare Plus</h3>
+                <p>Your trusted healthcare partner, providing comprehensive medical services with compassion and excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="doc.html">Our Doctors</a></p>
+                <p><a href="bapp.html">Book Appointment</a></p>
+                <p><a href="pharmacy.html">Pharmacy</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 (555) 123-4567</p>
+                <p>📧 info@medicareplus.com</p>
+                <p>📍 123 Health Street, Medical City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MediCare Plus | All Rights Reserved | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

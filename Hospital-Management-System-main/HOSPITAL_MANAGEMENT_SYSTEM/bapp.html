@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MediCare Plus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo"></div>
+                <div>
+                    <h1 class="hero">MediCare Plus</h1>
+                    <p class="tagline">Your Health, Our Priority</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a></li>
+                    <li><a href="doc.html">
+                        <span class="nav-icon">👨‍⚕️</span>
+                        <span class="nav-text">Doctors</span>
+                    </a></li>
+                    <li><a href="bapp.html" class="active">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Book Appointment</span>
+                    </a></li>
+                    <li><a href="pd.html">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </a></li>
+                    <li><a href="pharmacy.html">
+                        <span class="nav-icon">💊</span>
+                        <span class="nav-text">Pharmacy</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="bappoin" class="fade-in">
+                <div class="section-header">
+                    <h2 class="text-center mb-lg">Book Your Appointment</h2>
+                    <p class="text-center mb-xl" style="color: var(--light-text); font-size: 1.1rem;">Schedule your visit with our expert medical professionals. We'll take care of the rest.</p>
+                </div>
+                <form id="appointment-form" class="appointment-form">
+                    <div class="form-group">
+                        <label for="doctor">Select Doctor:</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="">Choose a doctor...</option>
+                            <option value="Dr. John David">Dr. John David - Orthopedic Surgeon</option>
+                            <option value="Dr. Emily White">Dr. Emily White - Pediatrician</option>
+                            <option value="Dr. Mark Johnson">Dr. Mark Johnson - Cardiologist</option>
+                            <option value="Dr. Sarah Joy">Dr. Sarah Joy - Dermatologist</option>
+                            <option value="Dr. James Brown">Dr. James Brown - Neurologist</option>
+                            <option value="Dr. Lisa Green">Dr. Lisa Green - Gynecologist</option>
+                            <option value="Dr. Michael Chen">Dr. Michael Chen - Oncologist</option>
+                            <option value="Dr. Anna Rodriguez">Dr. Anna Rodriguez - Psychiatrist</option>
+                            <option value="Dr. David Wilson">Dr. David Wilson - Urologist</option>
+                            <option value="Dr. Maria Garcia">Dr. Maria Garcia - Endocrinologist</option>
+                            <option value="Dr. Robert Taylor">Dr. Robert Taylor - Gastroenterologist</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Appointment Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Appointment Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="patient-name">Your Name:</label>
+                        <input type="text" id="patient-name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Reason for Visit:</label>
+                        <textarea id="reason" name="reason" placeholder="Briefly describe your symptoms or reason for the appointment" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Book Appointment</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MediCare Plus</h3>
+                <p>Your trusted healthcare partner, providing comprehensive medical services with compassion and excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="doc.html">Our Doctors</a></p>
+                <p><a href="bapp.html">Book Appointment</a></p>
+                <p><a href="pharmacy.html">Pharmacy</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 (555) 123-4567</p>
+                <p>📧 info@medicareplus.com</p>
+                <p>📍 123 Health Street, Medical City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MediCare Plus | All Rights Reserved | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
